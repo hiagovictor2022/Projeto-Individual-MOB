@@ -28,8 +28,8 @@ html {
 	scroll-behavior: smooth; /* deixa a rolagem da página suave */
 }
 
-a {
-	text-decoration: none;
+ a {
+	text-decoration:none;
 	color: white;
 }
 

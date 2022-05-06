@@ -29,16 +29,16 @@
 
 			<div class="main-nav">
 				<ul>
-					<li><a href="index.html#visão-valores">Sobre</a></li>
-					<li><a href="index.html#feature-cards-container">emoções</a></li>
-					<li><a href="index.html#contato-card">Personagens</a></li>
+					<li><a href="index.html#visão-valores" style="text-decoration: none;">Sobre</a></li>
+					<li><a href="index.html#feature-cards-container" style="text-decoration: none;">emoções</a></li>
+					<li><a href="index.html#contato-card " style="text-decoration: none;">Personagens</a></li>
 				</ul>
 			</div>
 
 			<div class="login-nav">
 				<ul>
-					<li><a href="pages/cadastro.html">Cadastrar</a></li>
-					<li><a href="pages/login.html">Entrar</a></li>
+					<li><a href="pages/cadastro.html"style="text-decoration: none;">Cadastrar</a></li>
+					<li><a href="pages/login.html"style="text-decoration: none;">Entrar</a></li>
 				</ul>
 			</div>
 		</div>
@@ -96,64 +96,32 @@
 		<!-- FEATURE CARDS -->
 		<div id="feature-cards-container">
 			<div class="lucros-card cards">
-				<i class="fa-solid fa-hand-holding-dollar"></i>
-				<h3>Lucros aumentam!</h3>
-				<p>Seu negócio rende mais em menos tempo!</p>
+				<img class="porque-img" src="images/fullbodymob2.png" alt="" />
 			</div>
 			
 			<div class="economia-card cards">
-				<i class="fa-solid fa-stopwatch"></i>
-				<h3>Economizará tempo!</h3>
-				<p>Com o monitoramento do plantio, você polpa seu tempo.</p>
+				<img class="porque-img" src="images/fullbodymob2.png" alt="" />
 			</div>
 			
 			<div class="prazo-card cards">
-				<i class="fa-regular fa-calendar-check"></i>
-				<h3>Entregas no prazo</h3>
-				<p>Satisfação dos clientes na nossa qualidade e prazos da proposta.</p>
+				<img class="porque-img" src="images/fullbodymob2.png" alt="" />
 			</div>
 			<div class="dados-card cards">
-				<i class="fa-solid fa-chart-line"></i>
-				<h3>Dados em tempo real!</h3>
-				<p>Alertas e notificações em seu dispositivo em questão de segundos!</p>
+				<img class="porque-img" src="images/fullbodymob2.png" alt="" />
 			</div>
 		</div>
-
+		
 		<!-- CONTATO CARD -->
 		<div id="contato-card">
 			<img src="images/background-image.svg" class="bg-image" alt="" />
 			<div class="contato-card-container">
 				<div class="contato-campos">
-					<h1 class="contato">Contato</h1>
-					<p class="padding-text">Preencha todos os campos</p>
-					<p>Nome:</p>
-					<input type="text" id="in_nome" class="campos" />
-					<p>E-mail:</p>
-					<input type="text" id="in_email" class="campos" />
-					<p>Assunto:</p>
-					<input type="text" id="in_assunto" class="campos" />
-					<p>Mensagem:</p>
-					<textarea
-						id="in_mensagem"
-						maxlength="1000"
-						style="resize: none"
-						name=""
-						id="in_mensagem"
-						class="campos"
-						cols="1"
-						rows="8"
-					></textarea>
-					<div class="campo-aceito">
-						<input type="checkbox" checked name="" id="checkbox" />
-						<p>Aceito receber novidades da Soy Venture</p>
-					</div>
-					<button onclick="validar()" id="enviar-btn">ENVIAR</button>
+					<img class="porque-img" src="images/fullbodymob2.png" alt="" />
 				</div>
 				<div class="barra-vertical"></div>
 				<img src="images/Contact us-bro (1).svg" alt="" />
 			</div>
 		</div>
-
 		<!-- FOOTER -->
 		<div class="footer-container">
 				<p class="copyright">
@@ -164,53 +132,4 @@
 		</div>
 	</body>
 </html>
-<script>
-	function validar() {
-		var nome = in_nome.value;
-		var email = in_email.value;
-		var assunto = in_assunto.value;
-		var mensagem = in_mensagem.value;
-		var alerta = "";
 
-		if (nome == "") {
-			alerta += "*Insira seu nome";
-		} else if (nome.length < 3) {
-			alerta += "*Seu nome deve ter pelo menos 3 caracteres";
-		}
-
-		if (email == "") {
-			alerta += "\n*insira seu email";
-		} else {
-			if (email.indexOf("@") == -1) {
-				alerta += "\n*Seu email deve conter @";
-			}
-			if (email.indexOf(".com") == -1) {
-				alerta += "\n*Seu email deve conter .com";
-			}
-		}
-
-		if (assunto == "") {
-			alerta += "\n*Insira um assunto";
-		}
-
-		if (mensagem == "") {
-			alerta += "\n*Insira uma mensagem";
-		} else if (mensagem.length < 3) {
-			alerta += "\n*Insira uma mensagem maior que 3 caracteres";
-		}
-
-		if (alerta != "") {
-			alert(alerta.trim());
-		} else {
-			alert("Mensagem enviada com sucesso. Obrigado!");
-
-			// Reset
-			/*
-			in_nome.value = '';
-			in_email.value = '';
-			in_assunto.value = '';
-			in_mensagem.value = '';
-			*/
-		}
-	}
-</script>
