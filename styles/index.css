@@ -16,6 +16,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family:'box';
+	src: url('../fonts/box.ttf')
+	format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 
 body {
@@ -268,6 +276,12 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	
+}
+
+.porcetagem{
+	font-family:'box';
+	font-size: 60px;
+	text-shadow: 2px 2px  black;
 }
 
 
