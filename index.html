@@ -27,8 +27,8 @@
 		<div class="main-nav">
 			<ul>
 				<li><a href="index.html#visão-valores" style="text-decoration:none">Sobre</a></li>
-				<li><a href="index.html#feature-cards-container" style="text-decoration:none">emoções</a></li>
-				<li><a href="index.html#contato-card" style="text-decoration: none;">Personagens</a></li>
+				<li><a href="index.html#feature-cards-container" style="text-decoration:none">Personagens</a></li>
+				<li><a href="index.html#contato-card" style="text-decoration: none;">emoções</a></li>
 			</ul>
 		</div>
 
@@ -76,13 +76,13 @@
 					</p>
 			</div>
 
-			<img class="quem-somos-img" src="images/Mob_Fullbody.webp" alt="" />
+			<img class="quem-somos-img" src="images/covinhas.png" alt="" />
 		</div>
 
 		<div class="quem-somos-border borders"></div>
 
 		<div class="porque-container visao-containers">
-			<img class="porque-img" src="images/fullbodymob2.png" alt="" />
+			<img class="porque-img" src="images/Mob_Fullbody.webp" alt="" />
 
 			<div class="porque-text visao-texts">
 				<h1>Shigeo Kageyama</h1>
@@ -107,20 +107,24 @@
 	<div id="feature-cards-container">
 
 		<div onclick="somar1()" onpointerleave="parar1()" class="card_1" id="div_imagem_1">
-			<div id="resultado1" class="porcetagem">0%</div>
+			<div id="resultado1" class="porcetagem"></div>
 		</div>
 
 		<div onclick="somar2()" onpointerleave="parar2()" class="card_2" id="div_imagem_2">
-			<div id="resultado2" class="porcetagem">0%</div>
+			<div id="resultado2" class="porcetagem"></div>
 
 
 		</div>
 
 		<div onclick="somar3()" onpointerleave="parar3()" class="card_3" id="div_imagem_3">
-			<div id="resultado3" class="porcetagem">0%</div>
-
+			<div id="resultado3" class="porcetagem"></div>
 
 		</div>
+
+		<div class="button-container">
+			<a href="" class="button">Personagens</a>
+		</div>
+		
 
 	</div>
 
@@ -132,7 +136,7 @@
 				<div class="button-container">
 				</div>
 			</div>
-			<div class="barra-vertical"></div>
+			<div  class="barra-vertical"></div>
 			<img src="images/Contact us-bro (1).svg" alt="" />
 		</div>
 	</div>
@@ -162,7 +166,7 @@
 		resultado1.innerHTML = `${counter1++}`
 		if(counter1 >= 100){
 			resultado1.innerHTML = ``
-			div_imagem_1.innerHTML = `<img src="images/musashi.webp">`
+			div_imagem_1.innerHTML = `<img src="images/fullbodymob2.png">`
 		}
 
 
@@ -173,7 +177,7 @@
 		resultado2.innerHTML = `${counter2++}`
 		if(counter2 >= 100){
 			resultado2.innerHTML = ``
-			div_imagem_2.innerHTML = `<img src="images/sho.webp">`
+			div_imagem_2.innerHTML = `<img src="images/Ritsu.webp">`
 
 		}
 	};
