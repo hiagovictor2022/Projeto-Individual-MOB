@@ -58,10 +58,9 @@ a {
 	background-color:#d63af9;
 }
 
-.nome-empresa {
+.nome-mob {
 	color: white;
 	text-shadow: 2px 2px black;
-	font-family: 'mob';
 }
 
 .main-nav a:hover,
@@ -82,9 +81,8 @@ a {
 	background-color:#d63af9;
 }
 
-.nome-empresa {
+.nome-mob {
 	padding-left: 10px;
-	font-family:'mob';
 	font-size: 2rem;
 }
 
@@ -186,7 +184,7 @@ a {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
-/* VISÃO E VALORES */
+/* Sobre */
 
 #visão-valores {
 	display: flex;
@@ -325,77 +323,44 @@ a {
 	display: flex;
 	position: relative;
 	justify-content: center;
-	height: 140vh;
+	height: 100vh;
 }
 
-#contato-card .bg-image {
-	position: absolute;
-	z-index: -1;
-	bottom: 0;
-	width: 100%;
-}
+
 
 .contato-card-container {
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	background-color: rgba(221, 218, 218, 0.97);
-	border-radius: 25px;
+	border-radius: 2px;
 	box-shadow: 0 0 10px -2px black;
-	width: 80%;
-	height: 80vh;
+	width: 70%;
+	height: 55vh;
 	margin: 75px auto;
 	padding: 50px 0 60px;
 }
 
-.contato-campos {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 40%;
+.mob_emo{
+	position:absolute;
+	width: 150px;
 }
 
-.contato-campos h1 {
-	padding-bottom: 10px;
+.txt_emocao{
+	position:absolute;
+	font-family:"Fredoka", sans-serif;
+	color: white;
+	text-shadow:2px 2px black;
+	font-size: 80px;
+	top: 30px;
+		
 }
-
-.contato-campos .padding-text {
-	padding-bottom: 20px;
-}
-
-.contato-campos .campos {
-	width: 100%;
-	margin-bottom: 15px;
-	margin-top: 3px;
-	border-radius: 2px;
-	border: none;
-	box-shadow: 0 0 2px 0px black;
-	padding: 3px 0;
-}
-
-.campo-aceito {
-	display: flex;
-	column-gap: 10px;
-	margin-left: 5px;
-	margin-bottom: 20px;
-}
-
-#enviar-btn {
-	margin-top: 0;
-	margin: auto;
-}
-
-.barra-vertical {
-	border-right: 3px solid rgb(184, 182, 182);
-	width: 10px;
-	height: 290px;
-	margin-bottom: 20px;
-	padding-left: 50px;
-}
-
-.contato-card-container img {
-	width: 40%;
-	padding-left: 30px;
+.txt_emocao:hover{
+font-size: 90px;
+text-shadow: 2px 2px red;
+animation: alternate;
 }
 
 /* FOOTER */
@@ -410,49 +375,16 @@ a {
 	font-size: 0.8rem;
 }
 
-.footer-links-container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	row-gap: 15px;
-}
 
-.footer-links-container ul {
-	display: flex;
-	list-style-type: none;
-	padding: 0;
-	column-gap: 10px;
-}
 
-.footer-links-container ul li {
-	border-right: 1px solid white;
-	padding-right: 10px;
-}
 
-.footer-links-container ul li:last-child {
-	border-right: none;
-}
 
-.footer-endereco-container {
-	display: flex;
-	flex-direction: column;
-	row-gap: 15px;
-}
 
-.redes-sociais {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	row-gap: 20px;
-}
 
-.icons-container {
-	display: flex;
-	justify-content: space-between;
-	column-gap: 25px;
-}
 
-.redes-sociais i {
-	font-size: 1.8rem;
-}
+
+
+
+
+
 
