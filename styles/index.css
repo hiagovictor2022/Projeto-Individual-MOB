@@ -323,45 +323,19 @@ a {
 	display: flex;
 	position: relative;
 	justify-content: center;
-	height: 100vh;
-}
-
-
-
-.contato-card-container {
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background-color: rgba(221, 218, 218, 0.97);
-	border-radius: 2px;
-	box-shadow: 0 0 10px -2px black;
-	width: 70%;
-	height: 55vh;
-	margin: 75px auto;
-	padding: 50px 0 60px;
-}
-
-.mob_emo{
-	position:absolute;
-	width: 150px;
+	height: 80vh;
 }
 
 .txt_emocao{
-	position:absolute;
-	font-family:"Fredoka", sans-serif;
+	font-family: 'arial';
+	font-size: 4.5rem;
 	color: white;
-	text-shadow:2px 2px black;
-	font-size: 80px;
-	top: 30px;
-		
+	text-shadow:3px 3px black;
+	position:absolute;
+	top: 30px;	
+	z-index: 10;
 }
-.txt_emocao:hover{
-font-size: 90px;
-text-shadow: 2px 2px red;
-animation: alternate;
-}
+
 
 /* FOOTER */
 
@@ -373,6 +347,7 @@ animation: alternate;
 	height: 80px;
 	color: white;
 	font-size: 0.8rem;
+	margin-top: 10%;
 }
 
 
