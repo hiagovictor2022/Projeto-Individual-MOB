@@ -13,7 +13,9 @@ html {
 a {
 	text-decoration:none;
 	color: white;
+	transition:ease 0.3s;
 }
+
 
 /* HEADER */
 
@@ -128,6 +130,10 @@ a {
 
 .card_cadastro ::placeholder{
 	color: #ffffff;
+}
+
+.card_cadastro input:hover{
+	background-color: #0aff74;
 }
 
 

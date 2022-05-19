@@ -133,12 +133,12 @@
 
 	<!-- Banner Video -->
 	<div id="contato-card">
-		<h1 class="txt_emocao">Emoções </h1>
+		<h1 class="txt_emocao"><p>Conheça</p><p style="font-size:3.0rem;margin-top:10px;margin-bottom:10px;">as</p><p">Emoções</p></h1> 
 		<div class="button-container" style="position:absolute;
 		bottom: 15vh;z-index: 30;">
 			<a href="" class="button">Conhecer</a>
 		</div>
-		<div class="wrapper" style="width: 77%;"></div>
+		<div class="wrapper" style="width: 66%;"></div>
 			<video autoplay muted loop>
 			<source src="images/video_banner.mp4" type="video/mp4">
 			
@@ -168,7 +168,7 @@
 
 	function add1() {
 
-		resultado1.innerHTML = `${counter1++}`
+		resultado1.innerHTML = `${counter1++}%`
 		if(counter1 >= 100){
 			resultado1.innerHTML = ``
 			div_imagem_1.innerHTML = `<img src="images/fullbodymob2.png">`
@@ -179,7 +179,7 @@
 
 	function add2() {
 
-		resultado2.innerHTML = `${counter2++}`
+		resultado2.innerHTML = `${counter2++}%`
 		if(counter2 >= 100){
 			resultado2.innerHTML = ``
 			div_imagem_2.innerHTML = `<img src="images/Ritsu.webp">`
@@ -189,7 +189,7 @@
 
 	function add3() {
 
-		resultado3.innerHTML = `${counter3++}`
+		resultado3.innerHTML = `${counter3++}%`
 		if(counter3 >= 100){
 			resultado3.innerHTML = ``
 			div_imagem_3.innerHTML = `<img src="images/Teruki.webp">`
