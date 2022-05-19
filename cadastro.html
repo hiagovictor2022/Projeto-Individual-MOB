@@ -51,7 +51,7 @@
 			<div class="bola2">
 
 			</div>
-			
+
 			<span class="tipo_campo">Nome:</span>
 			<input id="nome_input" type="text" placeholder="Seu nome">
 
@@ -65,12 +65,12 @@
 			<input id="confirmacao_senha_input" type="password" placeholder="******">
 
 			<div class="button-container">
-				<a href="" class="button">Cadastrar</a>
+				<a href="" class="button" onclick="validar()">Cadastrar</a>
 			</div>
 		</div>
-			
 
-		</div>
+
+	</div>
 
 	</div>
 
@@ -85,3 +85,47 @@
 </body>
 
 </html>
+
+<script>
+	function validar() {
+		var nome = nome_input.value;
+		var email = email_input.value;
+		var senha = senha_input.value;
+		var confirmar_senha = confirmacao_senha_input.value;
+		var alerta = "";
+
+		if (nome == "") {
+			alerta += "\n*Insira seu nome";
+		} else if (nome.length < 3) {
+			alerta += "\n*Seu nome deve conter pelo menos 3 caracteres";
+		}
+
+
+		if (email == "") {
+			alerta += "\n*Insira seu email"
+
+		} else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+			alerta = +"\n*Seu email deve conter @ e .com";
+		}
+
+		if (senha == "") {
+
+			alerta += "\n*Digite sua senha"
+
+		}
+
+		if (confirmar_senha =="") {
+			alerta += "\n*Confirme sua senha";
+		}
+
+		if (senha != confirmar_senha) {
+			alerta += "\n*As senhas não conferem!!";
+		}
+
+		if (alerta != "") {
+			alert(alerta.trim());
+		} else {
+			alert("Mensagem enviada com sucesso. Obrigado!")
+		}
+	}
+</script>

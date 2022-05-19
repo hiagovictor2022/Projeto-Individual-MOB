@@ -130,6 +130,9 @@ a {
 	color: #ffffff;
 }
 
+.card_cadastro input:hover{
+	background-color: #0aff74;
+}
 
 
 
