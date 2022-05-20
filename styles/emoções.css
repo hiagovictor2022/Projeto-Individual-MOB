@@ -196,7 +196,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #ff7d7aee;
-    background: linear-gradient(to right,#ca5345,#ffafadee);
+    background: linear-gradient(to right,#ca5345,#ff5a47,#ffafadee);
 }
 
 .raiva-containers {
@@ -244,7 +244,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#d9ccffee,#6797bc);
+    background: linear-gradient(to right,#d9ccffee,#3179ff,#6797bc);
 }
 
 .feliz-containers {
@@ -292,7 +292,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#8d3989ee,#ffccfc);
+    background: linear-gradient(to right,#8d3989ee,#f82bee,#ffccfc);
 }
 
 .amor-containers {
@@ -340,7 +340,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#348643ee,#acffc4);
+    background: linear-gradient(to right,#acffc4,#35fa3fbb,#348643ee);
 }
 
 .tristeza-containers {
@@ -388,7 +388,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#ffea75ee,#d3a331);
+    background: linear-gradient(to right,#fff1a2ee,#ffc038,#d3a331);
 }
 
 .medo-containers {
