@@ -1,0 +1,42 @@
+<div id="raiva">
+        <div class="raiva-borders"></div>
+		<div class="raiva-containers">
+			<div class="raiva-text">
+				<h1>Sobre</h1>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptas, accusantium unde aspernatur minus sed enim consequatur quaerat odio, pariatur cupiditate ducimus deserunt, eum commodi. Perspiciatis impedit dolor porro repellendus.
+
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptas, accusantium unde aspernatur minus sed enim consequatur quaerat odio, pariatur cupiditate ducimus deserunt, eum commodi. Perspiciatis impedit dolor porro repellendus.
+
+					</p>
+			</div>
+	
+			<img class="quem-somos-img" src="images/covinhas.png" alt="" />
+		</div>
+
+        <div class="raiva-borders"></div>
+
+	</div>
+
+    <!-- Feliz -->
+
+    <div id="feliz">
+
+        <div class="feliz-borders"></div>
+
+		<div class="feliz-containers">
+			<img class="porque-img" src="images/Mob_Fullbody.webp" alt="" />
+
+			<div class="feliz-text">
+				<h1>Shigeo Kageyama</h1>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptas, accusantium unde aspernatur minus sed enim consequatur quaerat odio, pariatur cupiditate ducimus deserunt, eum commodi. Perspiciatis impedit dolor porro repellendus.
+				</p>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptas, accusantium unde aspernatur minus sed enim consequatur quaerat odio, pariatur cupiditate ducimus deserunt, eum commodi. Perspiciatis impedit dolor porro repellendus.
+			</div>
+            
+		</div>
+         <div class="feliz-borders"></div>
+	</div>
