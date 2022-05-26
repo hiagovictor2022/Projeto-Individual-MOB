@@ -107,7 +107,7 @@ a {
     height:75%;
     background-color: hsl(146, 100%, 52%,0.6);
 	color: white;
-	font-size: 18px;
+	font-size: 24px;
 	text-shadow: 1px 1px black;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	border-radius:30px;
@@ -121,10 +121,12 @@ a {
 	text-align: center;
 	border-color: #f52ab1;
 	border-bottom-left-radius: 25px;
+	transition: 1s ease;
   }
 
   .card_cadastro input:focus {
 	background-color:#0aff74;
+
 }
 
 .card_cadastro ::placeholder{
