@@ -215,7 +215,7 @@ a {
 	row-gap: 20px;
 	line-height: 23px;
 	font-size: 17px;
-	font-weight:600;
+	font-weight:100;
 }
 
 #raiva img {
@@ -265,7 +265,7 @@ a {
 	row-gap: 20px;
 	line-height: 23px;
 	font-size: 17px;
-	font-weight:600;
+	font-weight:100;
 }
 
 #feliz img {
@@ -315,7 +315,7 @@ a {
 	row-gap: 20px;
 	line-height: 23px;
 	font-size: 17px;
-	font-weight:600;
+	font-weight:100;
 }
 
 #amor img {
@@ -365,7 +365,7 @@ a {
 	row-gap: 20px;
 	line-height: 23px;
 	font-size: 17px;
-	font-weight:600;
+	font-weight:100;
 }
 
 #tristeza img {
@@ -396,7 +396,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#fff1a2ee,#ffc038,#d3a331);
+    background: linear-gradient(to left,#fff1a2ee,#ffc038,#d3a331);
 }
 
 .medo-containers {
@@ -415,7 +415,7 @@ a {
 	row-gap: 20px;
 	line-height: 23px;
 	font-size: 17px;
-	font-weight:600;
+	font-weight:100;
 }
 
 #medo img {
