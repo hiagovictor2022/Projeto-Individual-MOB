@@ -96,7 +96,7 @@
 
 		if (nomeVar == "") {
 			alerta += "\n*Insira seu nome";
-		} else if (nome.length < 3) {
+		} else if (nomeVar.length < 3) {
 			alerta += "\n*Seu nome deve conter pelo menos 3 caracteres";
 		}
 
@@ -104,7 +104,7 @@
 		if (emailVar == "") {
 			alerta += "\n*Insira seu email"
 
-		} else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+		} else if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
 			alerta = +"\n*Seu email deve conter @ e .com";
 		}
 
