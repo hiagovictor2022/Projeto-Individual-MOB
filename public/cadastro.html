@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mob Psycho 100</title>
+	<link rel="stylesheet" href="styles/cadastro.css" />
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+		rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/8c4cdd8d42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div class="header">
+		<a href="index.html#" class="logo">
+			<img src="images/logo.png" alt="" class="logo-img" />
+			<h1 class="nome-mob">Mob Psycho</h1>
+		</a>
+
+		<div class="main-nav">
+			<ul>
+				<li><a href="index.html#visão-valores" style="text-decoration:none">Sobre</a></li>
+				<li><a href="index.html#feature-cards-container" style="text-decoration:none">Personagens</a></li>
+				<li><a href="index.html#contato-card" style="text-decoration: none;">emoções</a></li>
+			</ul>
+		</div>
+
+		<div class="login-nav">
+			<ul>
+				<li><a href="cadastro.html" style="text-decoration:none;font-weight: bold;">Cadastrar</a></li>
+				<li><a href="login.html" style="text-decoration:none;">Entrar</a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div id="container">
+
+		<div class="card_cadastro">
+
+			<div class="bola1">
+
+			</div>
+			<div class="bola2">
+
+			</div>
+
+			<span class="tipo_campo">Nome:</span>
+			<input id="nome_input" type="text" placeholder="Seu nome">
+
+			<span class="tipo_campo">E-mail:</span>
+			<input id="email_input" type="text" placeholder="email@gmail.com">
+
+			<span class="tipo_campo">Senha:</span>
+			<input id="senha_input" type="password" placeholder="******">
+
+			<span class="tipo_campo">Confirmação da Senha:</span>
+			<input id="confirmacao_senha_input" type="password" placeholder="******">
+
+			<div class="button-container">
+				<a class="button" onclick="cadastrar()">Cadastrar</a>
+			</div>
+		</div>
+
+
+	</div>
+
+	</div>
+
+	<!-- FOOTER -->
+	<div class="footer-container">
+		<p class="copyright">
+			Copyright © 2022 Mob Psycho 100 | Todos os direitos
+			reservados.
+		</p>
+
+	</div>
+</body>
+
+</html>
+
+<script>
+	function cadastrar(){
+		var nomeVar = nome_input.value;
+		var emailVar = email_input.value;
+		var senhaVar = senha_input.value;
+		var confirmacaoSenhaVar = confirmacao_senha_input.value;
+		var alerta = "";
+
+		if (nomeVar == "") {
+			alerta += "\n*Insira seu nome";
+		} else if (nome.length < 3) {
+			alerta += "\n*Seu nome deve conter pelo menos 3 caracteres";
+		}
+
+
+		if (emailVar == "") {
+			alerta += "\n*Insira seu email"
+
+		} else if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+			alerta = +"\n*Seu email deve conter @ e .com";
+		}
+
+		if (senhaVar == "") {
+
+			alerta += "\n*Digite sua senha"
+
+		}
+
+		if (confirmacaoSenhaVar =="") {
+			alerta += "\n*Confirme sua senha";
+		}
+
+		if (senhaVar != confirmacaoSenhaVar) {
+			alerta += "\n*As senhas não conferem!!";
+		}
+
+		if (alerta != "") {
+			alert(alerta.trim());
+		} else {
+			alert("Mensagem enviada com sucesso. Obrigado!")
+		}
+
+		fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                
+                window.location = "login.html";
+                limparFormulario();
+                
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            
+        });
+
+        return false;
+	}
+</script>
