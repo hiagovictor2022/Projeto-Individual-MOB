@@ -346,7 +346,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to right,#acffc4,#35fa3fbb,#348643ee);
+    background: linear-gradient(to right,#acffc4,#35fa3fbb,#48cb60ee);
 }
 
 .tristeza-containers {
@@ -396,7 +396,7 @@ a {
 	justify-content: center;
 	padding: 55px 240px;
 	background-color: #c8b6ffee;
-    background: linear-gradient(to left,#fff1a2ee,#ffc038,#d3a331);
+    background: linear-gradient(to left,#fff1a2ee,#ffc038,#edbb46);
 }
 
 .medo-containers {
@@ -450,5 +450,5 @@ a {
 	height: 80px;
 	color: white;
 	font-size: 0.8rem;
-	margin-top: 5%;
+	margin-top: 2%;
 }
