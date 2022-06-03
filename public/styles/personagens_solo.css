@@ -160,9 +160,10 @@ a {
 	font-weight: 600;
 	color: white;
 	font-size: 1.1rem;
-	background: linear-gradient(to right, var(--main-color), #d63af9);
+	background: linear-gradient(to right, var(--main-color), #f93ac0);
 	transition: all 0.2s;
 	cursor: pointer;
+    margin-top: 45px;
 }
 
 .button:hover,
@@ -185,16 +186,15 @@ a {
 	background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
 
-body{
-    background:linear-gradient(to right,#efc1f7, #ffffff);
-}
-
 img{
     max-width: 100%;
-    display: block;
+    
 }
 
 .flex{
+    background-color: #8a2be2;
+    padding: 100px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     max-width: 730px;
@@ -203,69 +203,21 @@ img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     color: #ffffff;
-    text-shadow: 2px 1px rgb(0 0 0 / 90%)
-    
+    margin-top: 55px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
+.flex h1{
+    margin-bottom: 15px;
+}
 .flex > div{
-    flex:1 1 200px;
+    flex: 1 1 350px;
     margin: 10px;
     
 }
 
-.img1:hover
-{
-box-shadow: 0 0 0 5px #d63af9;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
 
-.img2:hover
-{
-box-shadow: 0 0 0 5px #b537f2;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
-
-.img3:hover
-{
-box-shadow: 0 0 0 5px #ff00aa;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
-
-.img4:hover
-{
-box-shadow: 0 0 0 5px #ff00aa;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
-
-.img5:hover
-{
-box-shadow: 0 0 0 5px #b537f2;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
-
-.img6:hover
-{
-box-shadow: 0 0 0 5px #e27af4;
-transition: all 0.3s;
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
-transform: scale(0.9);
-}
 /* FOOTER */
 
 .footer-container {
