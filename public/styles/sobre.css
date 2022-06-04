@@ -1,0 +1,215 @@
+/* Variáveis */
+* {
+	--main-color: #f52ab1;
+	--secondary-color:#b537f2;
+	--terciary-color: #8a2be2;
+	margin: 0;
+}
+
+/*Fontes*/
+
+@font-face {
+	font-family:'mob';
+	src: url('../fonts/yukari.ttf')
+	format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:'box';
+	src: url('../fonts/box.ttf')
+	format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+
+html {
+	scroll-behavior: smooth; /* deixa a rolagem da página suave */
+}
+
+a {
+	text-decoration:none;
+	color: white;
+	transition:ease 0.3s; 
+}
+
+/* HEADER */
+
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	font-family: "Fredoka", sans-serif;
+	box-sizing: border-box; /* Amassa os elementos para dentro */
+	position: sticky; /* Deixa o header grudado no topo da tela */
+	top: 0;
+	z-index: 999; /* Define a dimensão do elemento */
+	height: 11vh;
+	width: 100%;
+	font-size: 1.15rem;
+	padding: 0 30px;
+	background: linear-gradient(to right,#d63af9, #f52ab1);
+}
+
+.nome-mob {
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.main-nav a:hover,
+.login-nav a:hover {
+	color: var(--terciary-color);
+	text-decoration: underline;
+}
+
+/* logo */
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 50px;
+	background-color:#d63af9;
+}
+
+.nome-mob {
+	padding-left: 10px;
+	font-size: 2rem;
+}
+
+/* nav */
+
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	column-gap: 40px;
+}
+
+.login-nav {
+	display: flex;
+	align-items: center;
+}
+
+.login-nav ul {
+	display: flex;
+	list-style-type: none;
+	column-gap: 40px;
+}
+
+/* BANNER */
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position:relative;
+	background: url(../images/banner-sobre-2.webp) no-repeat ;
+	background-size: cover;
+	height: 90vh;
+}
+
+.text-button-container {
+	margin-left: 100px;
+	z-index: 50;
+	width: 525px;
+}
+
+#banner p {
+	font-size: 4.5rem;
+	color: white;
+	text-shadow:2px 2px black;
+
+}
+
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 55px 240px;
+	background-color: #f876c0ee;
+    background:whitesmoke;
+    color: #797171;
+}
+
+.sobre-containers {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	column-gap: 50px;
+	min-height: 77vh;
+}
+
+.sobre-text p{
+	margin-top: 40px;
+	row-gap: 20px;
+	line-height: 27px;
+	font-size: 15px;
+	font-weight:100;
+}
+
+.rage_img{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.club_img{
+    align-items: center;
+}
+
+.gentileza_img img{
+    width: 90%;
+}
+
+.animacao img{
+    width:40%;
+}
+
+.poster{
+    margin: 100px;
+}
+
+
+#sobre img {
+	height: 100%;
+}
+
+.sobre-borders {
+	border-bottom: 1px solid rgb(255, 0, 0);
+	width: 75%;
+	padding-top: 35px;
+	margin-bottom: 25px;
+}
+
+
+
+
+/* FOOTER */
+
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background: linear-gradient(to right, #f52ab1, #d63af9);
+	height: 80px;
+	color: white;
+	font-size: 0.8rem;
+	
+}

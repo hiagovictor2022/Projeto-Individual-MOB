@@ -9,10 +9,10 @@
 /*Fontes*/
 
 @font-face {
-	font-family:'mob';
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	src: url('../fonts/yukari.ttf')
 	format('truetype');
-	font-weight: normal;
+	font-weight: bold;
 	font-style: normal;
 }
 

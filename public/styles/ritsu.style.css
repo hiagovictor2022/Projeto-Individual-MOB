@@ -175,7 +175,7 @@ a {
 #enviar-btn:active {
 	transform: translateY(4px);
 	width: 245px;
-	box-shadow: none;	background: #8a2be2;
+	box-shadow: none;	background: #f52ab1;
 }
 
 .wrapper {
