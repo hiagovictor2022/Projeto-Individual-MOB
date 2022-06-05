@@ -94,9 +94,9 @@ a {
 	justify-content: center;
 	align-items:center;
 	position:relative;
-	background: url(../images/banner-cadastro2.png) no-repeat ;
+	background: url(../images/fundocad.png) no-repeat ;
 	background-size: cover;
-	height: 77vh;
+	height: 100vh;
 }
 
 .card_cadastro{
