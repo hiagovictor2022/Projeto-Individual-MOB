@@ -138,6 +138,46 @@ a {
 
 }
 
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+}
+
+ .button,
+#enviar-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px 0px #d63af9;
+	width: 250px;
+	height: 60px;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	font-size: 1.1rem;
+	background: #8a2be2;
+	transition: all 0.2s;
+	cursor: pointer;
+    margin-top: 45px;
+}
+
+.button:hover,
+#enviar-btn:hover {
+	box-shadow: 0 4px 5px 0px black;
+}
+
+ .button:active,
+#enviar-btn:active {
+	transform: translateY(4px);
+	width: 245px;
+	box-shadow: none;	background: #f52ab1;
+}
+
 #sobre {
 	display: flex;
 	flex-direction: column;
@@ -169,6 +209,7 @@ a {
     display: flex;
     margin-top: 20px;
     margin-left: 25px;
+	justify-content: space-evenly;
 }
 .club_img{
     align-items: center;
@@ -178,12 +219,21 @@ a {
     width: 90%;
 }
 
+.animacao{
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+
 .animacao img{
-    width:40%;
+    width:100%;
+	
 }
 
 .poster{
-    margin: 100px;
+    display: flex;
+	justify-content: center;
+	margin-top: 15px;
 }
 
 
@@ -198,6 +248,32 @@ a {
 	margin-bottom: 25px;
 }
 
+.animacao_imagem{
+	margin: 10px;
+}
+
+.botao{
+	display: flex;
+	justify-content: center;
+}
+
+.temp3{
+display: flex;
+justify-content: center;
+
+
+}
+
+.temp3 img {
+	width: 100%;
+	
+}
+
+.img_temp3{
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
 
 
 
