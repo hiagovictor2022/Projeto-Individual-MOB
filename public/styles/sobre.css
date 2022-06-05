@@ -275,6 +275,11 @@ justify-content: center;
 	margin-top: 35px;
 }
 
+.trailer{
+	display: flex;
+	justify-content: center;
+	margin-top: 60px
+}
 
 
 /* FOOTER */

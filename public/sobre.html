@@ -213,6 +213,12 @@
                     </div>
                 </div>
 
+                <p style="font-size: 45px;text-align: center;">Confira o trailer:</p>
+
+                <div class="trailer"><iframe width="704" height="396" src="https://www.youtube.com/embed/b1miJsAVYJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"></div>
+
+                <p style="font-size: 30px;text-align:center"> <b style="color:#f876c0ee">A produção está prevista para estrear no Japão em outubro.</b></p>
+
             </div>
         </div>
     </div>
@@ -233,24 +239,31 @@
 
 <script>
 
-    var lista_img = ["","<img src=images/Mob_s02_-_blu_ray_001.webp>","<img src=images/Mob_s02_-_blu_ray_002.webp>","<img src=images/Mob_s02_-_blu_ray_003.webp>","<img src=images/Mob_s02_-_blu_ray_004.webp>","<img src=images/Mob_s02_-_blu_ray_006.webp>"]
+    var lista_img = ["<img src=images/Mob_s02_-_blu_ray_001.webp>","<img src=images/Mob_s02_-_blu_ray_002.webp>","<img src=images/Mob_s02_-_blu_ray_003.webp>","<img src=images/Mob_s02_-_blu_ray_004.webp>","<img src=images/Mob_s02_-_blu_ray_006.webp>"]
 
-    var posicao = 1
+    var posicao = 0
+    
+    // function passar(){
+
+    //     for(var i;i<posicao;posicao++){
+    //         poster_img.innerHTML = `
+    //         ${lista_img[posicao]}`
+    // }
 
     function passar() {
         posicao++
 
        if(posicao>lista_img.length-1){
-           posicao = 1
+           posicao = 0
        }
        
             poster_img.innerHTML = `
             ${lista_img[posicao]
             
-            }
+             }
         `
         
+            }
 
-
-    }
+    
 </script>
