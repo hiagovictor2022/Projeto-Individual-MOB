@@ -158,9 +158,9 @@ a {
 	height: 60px;
 	text-decoration: none;
 	font-weight: 600;
-	color: white;
+	color: #f52ab1;
 	font-size: 1.1rem;
-	background: #8a2be2;
+	background: hwb(271 17% 11% / 0.1);
 	transition: all 0.2s;
 	cursor: pointer;
     margin-top: 45px;
@@ -175,6 +175,7 @@ a {
 #enviar-btn:active {
 	transform: translateY(4px);
 	width: 245px;
+	color: white;
 	box-shadow: none;	background: #f52ab1;
 }
 
