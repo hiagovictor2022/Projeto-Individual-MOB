@@ -92,7 +92,7 @@ function cadastrar(req, res) {
 }
 
 function votar(req, res) {   
-    var mob    
+    var voto = req.votoServer; 
         usuarioModel.votar(voto)
             .then(
                 function (resultado) {
