@@ -55,3 +55,39 @@ function fecharModal() {
     divModal.style.display = "none";
 }
 
+
+// votar
+
+function votar(mob){
+
+    fetch("/usuarios/votar", {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json"
+       },
+
+       body: JSON.stringify({
+          mobServer: mob,
+         
+          
+       })
+   }).then(function (resposta) {
+
+       console.log("resposta: ", resposta);
+
+       if (resposta.ok) {
+           
+           console.log("estou aqui")
+           
+       } else {
+           throw ("Houve um erro ao tentar realizar o cadastro!");
+       }
+   }).catch(function (resposta) {
+       console.log(`#ERRO: ${resposta}`);
+       
+   });
+
+   return false;
+}
+
+

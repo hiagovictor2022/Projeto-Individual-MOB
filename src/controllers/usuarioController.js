@@ -92,8 +92,10 @@ function cadastrar(req, res) {
 }
 
 function votar(req, res) {   
-    var voto = req.votoServer; 
-        usuarioModel.votar(voto)
+    var mob = req.mobServer;
+   
+    
+        usuarioModel.votar(mob)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -102,7 +104,7 @@ function votar(req, res) {
                 function (erro) {
                     console.log(erro);
                     console.log(
-                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        "\nHouve um erro ao realizar o cadastro! Erro:  ",
                         erro.sqlMessage
                     );
                     res.status(500).json(erro.sqlMessage);
@@ -110,6 +112,7 @@ function votar(req, res) {
             );
     }
 
+    
 
 module.exports = {
     entrar,

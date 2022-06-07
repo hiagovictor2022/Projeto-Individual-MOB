@@ -16,12 +16,13 @@
     <script src="https://kit.fontawesome.com/8c4cdd8d42.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="validarSessao()">
     <!-- HEADER -->
     <div class="header">
         <a href="index.html#" class="logo">
             <img src="images/logo.png" alt="" class="logo-img" />
             <h1 class="nome-mob">Mob Psycho 100</h1>
+            <script src="js/funcoes.js"></script>
         </a>
 
         <div class="main-nav">
@@ -35,7 +36,7 @@
         <div class="login-nav">
             <ul>
                 <li><a href="cadastro.html" style="text-decoration:none;">Cadastrar</a></li>
-                <li><a href="login.html" style="text-decoration:none;">sair</a></li>
+                <li><a onclick="limparSessao()" style="text-decoration:none;cursor:pointer;">sair</a></li>
 
             </ul>
         </div>
@@ -109,5 +110,11 @@ function validarSessao() {
     } else {
         window.location = "cadastro.html";
     }
+}
+function limparSessao() {
+    // aguardar();
+    sessionStorage.clear();
+    // finalizarAguardar();
+    window.location = "../login.html";
 }
 </script>
