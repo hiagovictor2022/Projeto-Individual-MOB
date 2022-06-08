@@ -78,7 +78,6 @@ function votar(personagens){
 
        if (resposta.ok) {
            
-           alert('Voto enviado com sucesso!')
        porcentagem(personagens)
               
        } else {
@@ -110,9 +109,8 @@ function porcentagem(personagens){
 
        if (resposta.ok) {
            
-           alert('Porcentagem enviado com sucesso!')
         resposta.json().then(json => {
-            txt_porcentagem.innerHTML = `${json[0].qtd_votos/json[0].qtd_total*100}%`
+            txt_porcentagem.innerHTML = ` Votos ${(json[0].qtd_votos/json[0].qtd_total*100).toFixed(0)}%`
         })  
 
            
@@ -144,7 +142,7 @@ function exibir(){
 
        if (resposta.ok) {
            
-           alert('Porcentagem enviado com sucesso!')
+           
         
        } else {
            alert('erro');

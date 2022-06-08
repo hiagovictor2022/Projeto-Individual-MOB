@@ -37,6 +37,7 @@
             <ul>
                 <li><a href="cadastro.html" style="text-decoration:none;">Cadastrar</a></li>
                 <li><a onclick="limparSessao()" style="text-decoration:none;cursor:pointer;">sair</a></li>
+                <li id="text" style="color: white;"></li>
 
             </ul>
         </div>
@@ -96,6 +97,7 @@ function validarSessao() {
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
+    text.innerHTML = `Olá, ${nome}`;
 
     var h1LoginUsuario = document.getElementById("h1_login_usuario");
 

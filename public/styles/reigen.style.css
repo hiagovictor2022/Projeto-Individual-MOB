@@ -217,6 +217,13 @@ img{
     
 }
 
+.flex #txt_porcentagem{
+	font-size: 30px;
+	text-shadow: 2px 2px black;
+    text-align: start;
+	margin-bottom: 90px;
+
+}
 
 /* FOOTER */
 

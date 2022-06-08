@@ -9,27 +9,6 @@ CREATE TABLE usuario(
 	senha VARCHAR(50)
 );
 
-create table voto_personagens(
-id_voto int auto_increment,
-mob int,
-ritsu int,
-teruki int,
-reigen int,
-covinhas int,
-musashi int,
-fk_usuario int,
-foreign key (fk_usuario) references usuario (id),
-primary key (id_voto,fk_usuario)
-);
-
-drop table votos;
-
-INSERT INTO voto_personagens (mob,fk_usuario) VALUES (1,1);
-
-select * from voto_personagens;
-
-select truncate((sum(mob)/count(id_voto))*100,2) as porcentagem from voto_personagens;
-
 
 create table votos (
 fk_usuario int,
@@ -60,8 +39,7 @@ select count(personagem) as qtd_votos,(select count(fk_usuario) from votos) as q
 
 select personagem,count(personagem) from votos group by personagem;
 
-
-
+select * from usuario;
 
 
 
