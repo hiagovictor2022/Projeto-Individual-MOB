@@ -1,3 +1,4 @@
+
 // sessão
 function validarSessao() {
     // aguardar();
@@ -57,8 +58,8 @@ function fecharModal() {
 
 
 // votar
-
-function votar(mob){
+porcentagem(txt_porcentagem.title)
+function votar(personagens){
 
     fetch("/usuarios/votar", {
        method: "POST",
@@ -66,10 +67,10 @@ function votar(mob){
            "Content-Type": "application/json"
        },
 
-       body: JSON.stringify({
-          mobServer: mob,
-         
-          
+       body: JSON.stringify({  
+          personagens,
+          id:sessionStorage.ID_USUARIO,
+
        })
    }).then(function (resposta) {
 
@@ -77,9 +78,11 @@ function votar(mob){
 
        if (resposta.ok) {
            
-           console.log("estou aqui")
-           
+           alert('Voto enviado com sucesso!')
+       porcentagem(personagens)
+              
        } else {
+           alert('Você ja votou nesse personagem!');
            throw ("Houve um erro ao tentar realizar o cadastro!");
        }
    }).catch(function (resposta) {
@@ -90,4 +93,68 @@ function votar(mob){
    return false;
 }
 
+function porcentagem(personagens){
+    fetch("/usuarios/porcentagem", {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json"
+       },
+
+       body: JSON.stringify({  
+          personagens,
+
+       })
+   }).then(function (resposta) {
+
+       console.log("resposta: ", resposta);
+
+       if (resposta.ok) {
+           
+           alert('Porcentagem enviado com sucesso!')
+        resposta.json().then(json => {
+            txt_porcentagem.innerHTML = `${json[0].qtd_votos/json[0].qtd_total*100}%`
+        })  
+
+           
+       } else {
+           alert('erro');
+           throw ("Houve um erro ao tentar realizar o cadastro!");
+       }
+   }).catch(function (resposta) {
+       console.log(`#ERRO: ${resposta}`);
+       
+   });
+
+   return false;
+}
+
+function exibir(){
+    fetch("/usuarios/exibir", {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json"
+       },
+
+       body: JSON.stringify({  
+
+       })
+   }).then(function (resposta) {
+
+       console.log("resposta: ", resposta);
+
+       if (resposta.ok) {
+           
+           alert('Porcentagem enviado com sucesso!')
+        
+       } else {
+           alert('erro');
+           throw ("Houve um erro ao tentar realizar o cadastro!");
+       }
+   }).catch(function (resposta) {
+       console.log(`#ERRO: ${resposta}`);
+       
+   });
+
+   return false;
+}
 

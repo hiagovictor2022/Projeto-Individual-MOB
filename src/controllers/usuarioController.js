@@ -92,10 +92,11 @@ function cadastrar(req, res) {
 }
 
 function votar(req, res) {   
-    var mob = req.mobServer;
-   
+    var personagens = req.body.personagens;
+    var id = req.body.id;
+    console.log('erro personagens')
     
-        usuarioModel.votar(mob)
+        usuarioModel.votar(personagens,id)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -112,6 +113,50 @@ function votar(req, res) {
             );
     }
 
+    function porcentagem(req, res) {   
+        var personagens = req.body.personagens;
+        
+        console.log('erro personagens')
+        
+            usuarioModel.porcentagem(personagens)
+                .then(
+                    function (resultado) {
+                        res.json(resultado);
+                    }
+                ).catch(
+                    function (erro) {
+                        console.log(erro);
+                        console.log(
+                            "\nHouve um erro ao realizar o cadastro! Erro:  ",
+                            erro.sqlMessage
+                        );
+                        res.status(500).json(erro.sqlMessage);
+                    }
+                );
+        }
+
+        function exibir(req, res) {   
+            
+            console.log('erro personagens')
+            
+                usuarioModel.exibir()
+                    .then(
+                        function (resultado) {
+                            res.json(resultado);
+                        }
+                    ).catch(
+                        function (erro) {
+                            console.log(erro);
+                            console.log(
+                                "\nHouve um erro ao realizar o cadastro! Erro:  ",
+                                erro.sqlMessage
+                            );
+                            res.status(500).json(erro.sqlMessage);
+                        }
+                    );
+            }
+
+
     
 
 module.exports = {
@@ -120,4 +165,6 @@ module.exports = {
     listar,
     testar,
     votar,
+    porcentagem,
+    exibir,
 }

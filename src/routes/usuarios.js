@@ -23,4 +23,8 @@ router.post("/votar", function (req, res) {
     usuarioController.votar(req, res);
 });
 
+router.post("/porcentagem", function (req, res) {
+    usuarioController.porcentagem(req, res);
+});
+
 module.exports = router;

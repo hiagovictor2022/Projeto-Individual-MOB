@@ -23,6 +23,7 @@ var mySqlConfig = {
     user: "root",
     database: "projetoMob",
     password: "hiagod1020",
+    multipleStatements:true
 };
 
 function executar(instrucao) {
