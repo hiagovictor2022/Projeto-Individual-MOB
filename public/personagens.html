@@ -76,7 +76,11 @@
             <p>Teruki Hanazawa</p>
         </div>
 
+
     </section>
+    <!-- <button onclick="exibir()">sim</button>
+
+    <div id="mais_votado"></div> -->
 
     <!-- FOOTER -->
     <div class="footer-container">
@@ -119,4 +123,35 @@ function limparSessao() {
     // finalizarAguardar();
     window.location = "../login.html";
 }
+
+// function exibir(){
+//     fetch("/usuarios/exibir", {
+//        method: "POST",
+//        headers: {
+//            "Content-Type": "application/json"
+//        },
+
+//        body: JSON.stringify({  
+
+//        })
+//    }).then(function (resposta) {
+
+//        console.log("resposta: ", resposta);
+
+//        if (resposta.ok) {
+        
+//         mais_votado.innerHTML = ` Personagem mais votado:${(mais_votado)}%`
+           
+        
+//        } else {
+//            alert('erro');
+//            throw ("Houve um erro ao tentar realizar o cadastro!");
+//        }
+//    }).catch(function (resposta) {
+//        console.log(`#ERRO: ${resposta}`);
+       
+//    });
+
+//    return false;
+// }
 </script>

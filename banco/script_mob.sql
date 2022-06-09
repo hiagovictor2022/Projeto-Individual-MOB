@@ -37,10 +37,25 @@ select * from votos;
 
 select count(personagem) as qtd_votos,(select count(fk_usuario) from votos) as qtd_total from votos where personagem = 'mob';
 
-select personagem,count(personagem) from votos group by personagem;
+select personagem,count(personagem) as mais_votado from votos group by personagem;
 
 select * from usuario;
 
+insert into usuario values
+
+(null,'jades','jades@gmail.com','1020'),
+(null,'marques','marques@gmail.com','1020');
+
+insert into votos values
+(5,'reigen'),
+(5,'covinhas'),
+(5,'ritsu'),
+(5,'mob'),
+(6,'teruki'),
+(6,'reigen'),
+(6,'musashi');
+
+select * from usuario join votos on fk_usuario = id;
 
 
 

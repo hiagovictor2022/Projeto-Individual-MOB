@@ -5,6 +5,7 @@ function validarSessao() {
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
+    text.innerHTML = `Olá, ${nome}`;
 
     var h1LoginUsuario = document.getElementById("h1_login_usuario");
 
@@ -141,7 +142,8 @@ function exibir(){
        console.log("resposta: ", resposta);
 
        if (resposta.ok) {
-           
+        
+        mais_votado.innerHTML = ` Votos ${json[2].personagem}%`
            
         
        } else {

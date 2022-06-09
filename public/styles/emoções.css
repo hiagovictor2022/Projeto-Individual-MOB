@@ -437,7 +437,65 @@ a {
 	align-self: flex-start;
 }
 
+.comentar{
+	display: flex;
+	justify-content: center;
+	height:30vh;
+}
+.comentar input{
+	align-items: center;
+	height: 8vh;
+	box-shadow: 2px 2px black;
+}
 
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+}
+
+ .button2,
+#enviar-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 5px 10px 0px #060007;
+	width: 150px;
+	height: 35px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #000000;
+	font-size: 1.1rem;
+	background: hwb(271 17% 11% / 0);
+	transition: all 0.2s;
+	cursor: pointer;
+	margin-right: 20px;
+    
+}
+
+.button2:hover,
+#enviar-btn:hover {
+	box-shadow: 0 4px 5px 0px black;
+}
+
+ .button2:active,
+#enviar-btn:active {
+	transform: translateY(4px);
+	width: 245px;
+	color: white;
+	box-shadow: none;	background:#b537f2;
+}
+
+.caixa{
+	margin-left: 30px;
+	font-size: 20px;
+	color: #b537f2;
+	font-weight: 800;
+}
 
 
 /* FOOTER */
