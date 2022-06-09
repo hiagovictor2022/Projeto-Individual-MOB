@@ -42,7 +42,11 @@
             </ul>
         </div>
     </div>
+
+    <div id="mais_votado" class="mais_votado"></div>
+
     <section class="flex">
+
 
         <div class="img1" a href="">
             <a href="mob_page.html"><img src="images/mob icon.jpg"></a>
@@ -78,9 +82,9 @@
 
 
     </section>
-    <!-- <button onclick="exibir()">sim</button>
+    
 
-    <div id="mais_votado"></div> -->
+     
 
     <!-- FOOTER -->
     <div class="footer-container">
@@ -95,22 +99,17 @@
 </html>
 
 <script>
+    exibir()
     // sessão
 function validarSessao() {
     // aguardar();
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
-    text.innerHTML = `Olá, ${nome}`;
 
-    var h1LoginUsuario = document.getElementById("h1_login_usuario");
 
     if (email != null && nome != null) {
         // window.alert(`Seja bem-vindo, ${nome}!`);
-        if (h1LoginUsuario != undefined) {
-            h1LoginUsuario.innerHTML = email;
-        }
-        b_usuario.innerHTML = nome;
 
         // finalizarAguardar();
     } else {
@@ -124,34 +123,51 @@ function limparSessao() {
     window.location = "../login.html";
 }
 
-// function exibir(){
-//     fetch("/usuarios/exibir", {
-//        method: "POST",
-//        headers: {
-//            "Content-Type": "application/json"
-//        },
+function exibir(){
+    fetch("/usuarios/exibir", {
+       method: "POST",
+       headers: {
+           "Content-Type": "application/json"
+       },
 
-//        body: JSON.stringify({  
+       body: JSON.stringify({  
 
-//        })
-//    }).then(function (resposta) {
+       })
+   }).then(function (resposta) {
 
-//        console.log("resposta: ", resposta);
+       console.log("resposta: ", resposta);
 
-//        if (resposta.ok) {
-        
-//         mais_votado.innerHTML = ` Personagem mais votado:${(mais_votado)}%`
+       if (resposta.ok) {
+
+
+        resposta.json().then(function(json) {
+            console.log(JSON.stringify(json))
+            var maior = 0;
+            var personagem_mais_votado = ''
+
+            for(var i = 0; i < json.length; i++) {
+                if(json[i].mais_votado >= maior) {
+                    maior = json[i].mais_votado
+                    personagem_mais_votado = json[i].personagem
+                }
+            }
+
+            mais_votado.innerHTML = `O Personagem com mais votos éo ${personagem_mais_votado} com ${maior} votos.`
+        } 
+
+        )
+        // mais_votado.innerHTML = ` Personagem mais votado:${(mais_votado)}%`
            
         
-//        } else {
-//            alert('erro');
-//            throw ("Houve um erro ao tentar realizar o cadastro!");
-//        }
-//    }).catch(function (resposta) {
-//        console.log(`#ERRO: ${resposta}`);
+       } else {
+           alert('erro');
+           throw ("Houve um erro ao tentar realizar o cadastro!");
+       }
+   }).catch(function (resposta) {
+       console.log(`#ERRO: ${resposta}`);
        
-//    });
+   });
 
-//    return false;
-// }
+   return false;
+}
 </script>

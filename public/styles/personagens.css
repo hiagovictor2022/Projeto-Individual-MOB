@@ -266,6 +266,18 @@ transition: all 0.3s;
 -ms-transform: scale(0.9);
 transform: scale(0.9);
 }
+
+.mais_votado{
+	width: 200px;
+	margin-top: 30px;
+	color: #ffffff;
+	font-size: 30px;
+	text-shadow: 2px 2px black;
+    text-align: start;
+	margin-bottom: 90px;
+
+}
+
 /* FOOTER */
 
 .footer-container {

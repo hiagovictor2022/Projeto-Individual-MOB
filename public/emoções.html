@@ -244,15 +244,7 @@
 		<a href="emoções.html#" class="button">↥</a>
 	</div>
 
-	<div class="comentar">
-		<div class="button-container">
-			<a class="button2" onclick="comentar()">comentar</a>
-			<input type="text" class="input" id="input_a">
-		   <div id="text" class="caixa"></div>
-		</div>
-	</div>
-
-   
+	
 	
 	<!-- FOOTER -->
 	<div class="footer-container">
@@ -265,20 +257,3 @@
 </body>
 
 </html>
-
-<script>
-
-	var lista_filme = []
-    function comentar() {
-        var filme = input_a.value
-        lista_filme.push(filme)
-                    
-        text.innerHTML = ""
-        for (var contador = 0;
-             contador < lista_filme.length;
-             contador++) {
-            text.innerHTML += `${lista_filme[contador]}<br>` 
-        }
-    }
-
-</script>

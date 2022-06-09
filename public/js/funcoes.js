@@ -59,7 +59,6 @@ function fecharModal() {
 
 
 // votar
-porcentagem(txt_porcentagem.title)
 function votar(personagens){
 
     fetch("/usuarios/votar", {
